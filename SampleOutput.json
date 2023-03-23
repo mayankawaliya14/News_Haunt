@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "totalResults": 2,
+  "articles": [
+    {
+      "source": { "id": null, "name": "CBS Sports" },
+      "author": "Chuck Booth",
+      "title": "USA vs. Netherlands score: World Cup live updates, scores, bracket, USMNT knockout game in FIFA World Cup 2022 - CBS Sports",
+      "description": "The Americans are heading home and the Dutch will advance to the quarterfinals and play the winner of Argentina and Australia",
+      "url": "https://www.cbssports.com/soccer/news/usa-out-of-world-cup-live-updates-as-usmnt-eliminated-by-netherlands-in-fifa-world-cup-2022-round-of-16/live/",
+      "urlToImage": "https://sportshub.cbsistatic.com/i/r/2022/12/03/3353ee97-68e1-444f-b783-3ff75396814f/thumbnail/1200x675/04df5ed64a85609b3d59da4a9365897d/gettyimages-1245332281.jpg",
+      "publishedAt": "2022-12-03T16:37:41Z",
+      "content": "The United States men's national team were eliminated by the Netherlands in the round of 16 of the 2022 FIFA World Cup on Saturday. First-half goals by Memphis Depay and Daley Blind did Gregg Berhalt… [+1294 chars]"
+    },
+    {
+      "source": { "id": null, "name": "247Sports" },
+      "author": "Brad Crawford",
+      "title": "Lincoln Riley, Caleb Williams sound off after USC's loss to Utah in Pac-12 title alters CFB Playoff hopes - 247Sports",
+      "description": "...",
+      "url": "https://247sports.com/LongFormArticle/Lincoln-Riley-Caleb-Williams-sound-off-after-USCs-loss-to-Utah-in-Pac-12-title-alters-CFB-Playoff-hopes-199379965/",
+      "urlToImage": "https://s3media.247sports.com/Uploads/Assets/78/485/11485078.png?fit=bounds&crop=1200:630,offset-y0.50&width=1200&height=630",
+      "publishedAt": "2022-12-03T14:01:27Z",
+      "content": "\"I mean, it's a big factor every single game. But it's not a singular factor. I mean, we all own in it. Again, you can go look at this game from so many different angles, right? Had a lot of momentum… [+727 chars]"
+    }
+  ]
+}
