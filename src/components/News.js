@@ -5,7 +5,8 @@ import PropTypes from 'prop-types'
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const News = (props)=> {
-  
+  let ApiKey= process.env.REACT_APP_APIKEY;
+
   const [articles, setArticles] = useState([])
   const [loading, setLoading] = useState(true)
   const [page, setPage]= useState(1)
@@ -32,28 +33,6 @@ const News = (props)=> {
     // eslint-disable-next-line
   }, [])
 
-  // handleNextclick = async ()=>{
-  //   let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=988fd5850c574c3dbb7699017e52f8ba&page=${page+1}&pagesize=${props.pageSize}`
-  //   setState({loading: true})
-  //   let data = await fetch(url);
-  //   let parsedData = await data.json()
-  //   console.log(parsedData)
-  //   setState({
-  //     page: page+1,
-  //     articles: parsedData.articles,
-  //     loading: false})
-  // }
-  // handlePrevclick = async ()=>{
-  //   let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=988fd5850c574c3dbb7699017e52f8ba&page=${page-1}&pagesize=${props.pageSize}`
-  //   setState({loading: true})
-  //   let data = await fetch(url);
-  //   let parsedData = await data.json()
-  //   console.log(parsedData)
-  //   setState({
-  //     page: page-1,
-  //     articles: parsedData.articles,
-  //     loading: false})
-  // }
   const fetchMoreData = async () => {
     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=c3bb637666e3420387a44c6ab79c544b&page=${page+1}&pagesize=${props.pageSize}`
     let data = await fetch(url);
@@ -82,11 +61,6 @@ const News = (props)=> {
             </div>
        })}     </div>
         </div></InfiniteScroll>
-        {/* <div className="d-flex justify-content-between">
-        <button type="button" disabled={page<=1} className="btn btn-light" onClick={handlePrevclick}>&larr; Previous</button>
-        <button type="button" disabled={page+1>Math.ceil(totlalResults/12)} className="btn btn-light" onClick={handleNextclick}>Next &rarr;</button>
-        </div>
-        <div className="text-center text-light"><strong>page-{page}</strong></div> */}
       </>
     )
   }
@@ -104,4 +78,3 @@ News.propTypes = {
 }
 export default News
 
-//Api Key 988fd5850c574c3dbb7699017e52f8ba
